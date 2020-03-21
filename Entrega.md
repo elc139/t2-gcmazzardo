@@ -1,6 +1,7 @@
 # T2: Programação Paralela Multithread 
 
 Nome: Gabriel Cortez Mazzardo
+
 Disciplina: Programação paralela
 
 ## Parte 1 : Pthreads
@@ -13,7 +14,7 @@ TODO
 
 Considerando que o tempo de execução no primeiro caso (com apenas 1 thread) foi de 7212172 microssegundos, e no segundo caso (com 2 threads) foi de 3864718 microssegundos, a aceleração obtida foi de 1.86615737552x.
 
-![Execução com 1 e 2 threads e respectivos tempos de execução](https://imgur.com/kTF3qIL | width=100)
+<img src="https://imgur.com/kTF3qIL" width="100">
 
 
 **Resposta questão 3:** 
@@ -38,7 +39,7 @@ Abaixo, estão as tabelas com os dados obtidos durante a execução dos casos re
 |4                |250000          |4000                |5751932    |
 |4                |250000          |2000                |2881530    |
 
-![Variando-se o número de repetições](https://imgur.com/z3CqDa7 | width=100)
+<img src="https://imgur.com/z3CqDa7" width="100">
 
 
 -> Variando-se o tamanho do vetor:
@@ -49,7 +50,7 @@ Abaixo, estão as tabelas com os dados obtidos durante a execução dos casos re
 |4                |500000          |2000                |5742612                     |
 |4                |250000          |2000                |2892375                     |
 
-![Variando-se o tamanho do vetor](https://imgur.com/3zHJyXz | width=100)
+<img src="https://imgur.com/3zHJyXz" width="100">
 
 
 -> Variando-se o número de threads:
@@ -60,7 +61,7 @@ Abaixo, estão as tabelas com os dados obtidos durante a execução dos casos re
 |2                |500000          |2000                |3595174    |
 |4                |250000          |2000                |1438810    |
 
-![Variando-se o número de threads](https://imgur.com/eR9sv2n | width=100)
+<img src="https://imgur.com/eR9sv2n" width="100">
 
 
 **Resposta questão 5:**
