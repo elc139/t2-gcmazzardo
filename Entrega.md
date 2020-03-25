@@ -2,7 +2,7 @@
 
 Nome: Gabriel Cortez Mazzardo
 
-Disciplina: Programação paralela
+Disciplina: Programação Paralela
 
 ## Parte 1 : Pthreads
 
@@ -14,7 +14,8 @@ TODO
 
 Considerando que o tempo de execução no primeiro caso (com apenas 1 thread) foi de 7212172 microssegundos, e no segundo caso (com 2 threads) foi de 3864718 microssegundos, a aceleração obtida foi de 1.86615737552x.
 
-<img src="https://imgur.com/kTF3qIL" width="100">
+<img src="https://i.imgur.com/kTF3qIL.png" width="100">
+
 
 
 **Resposta questão 3:** 
@@ -33,35 +34,35 @@ Abaixo, estão as tabelas com os dados obtidos durante a execução dos casos re
 
 -> Variando-se o número de repetições:
 
-|Número de Threads|Tamanho do vetor|Número de repetições|Tempo médio|
+|nthreads|size|repetitions|usec|
 |-----------------|----------------|--------------------|-----------|
 |4                |250000          |8000                |11512139   |
 |4                |250000          |4000                |5751932    |
 |4                |250000          |2000                |2881530    |
 
-<img src="https://imgur.com/z3CqDa7" width="100">
+<img src="https://i.imgur.com/z3CqDa7.png" width="100">
 
 
 -> Variando-se o tamanho do vetor:
 
-|Número de Threads|Tamanho do vetor|Número de repetições|Tempo médio (microssegundos)|
+|nthreads|size|repetitions|usec|
 |-----------------|----------------|--------------------|----------------------------|
 |4                |1000000         |2000                |11462491                    |
 |4                |500000          |2000                |5742612                     |
 |4                |250000          |2000                |2892375                     |
 
-<img src="https://imgur.com/3zHJyXz" width="100">
+<img src="https://i.imgur.com/3zHJyXz.png" width="100">
 
 
 -> Variando-se o número de threads:
 
-|Número de Threads|Tamanho do vetor|Número de repetições|Tempo médio|
+|nthreads|size|repetitions|usec|
 |-----------------|----------------|--------------------|-----------|
 |1                |1000000         |2000                |7346566    |
 |2                |500000          |2000                |3595174    |
 |4                |250000          |2000                |1438810    |
 
-<img src="https://imgur.com/eR9sv2n" width="100">
+<img src="https://i.imgur.com/eR9sv2n.png" width="100">
 
 
 **Resposta questão 5:**
@@ -70,4 +71,52 @@ As duas linhas a mais que a versão completa do programa possui são responsáve
 
 ## Parte 2: OpenMP
 
-TODO
+**Resposta questão 1:**
+
+O arquivo da implementação está na pasta raíz do repositório, com o nome de "OPENMP_dotprod.c" :).
+
+**Resposta questão 2:**
+
+O desempenho do programa OpenMP implementado foi analisado utilizando-se os mesmos testes aplicados na **questão 3 da Parte 1** do trabalho, com os mesmos valores distintos de número de threads, tamanhos de vetores e número de repetições. As tabelas e gráficos abaixo foram gerados com base nos resultados obtidos, e demonstram o desempenho do programa implementado em OpenMP. No geral, observa-se, tanto pelos valores vistos nas tabelas e gráficos abaixo, quanto pelo arquivo "results.csv" que possui um compilado dos resultados dos testes, que o programa implementado em OpenMP obteve tempos de processamento um pouco menores que o equivalente em POSIX e, portanto, um melhor desempenho.
+
+
+-> Variando-se o número de repetições:
+
+|nthreads|size  |repetitions|usec    |
+|--------|------|-----------|--------|
+|4       |250000|8000       |11472043|
+|4       |250000|4000       |5739137 |
+|4       |250000|2000       |2865963 |
+
+<img src="https://i.imgur.com/wwREOOf.png" width="100">
+
+
+-> Variando-se o tamanho do vetor:
+
+|nthreads|size  |repetitions|usec    |
+|--------|------|-----------|--------|
+|4       |1000000|2000       |11443664|
+|4       |500000|2000       |5720374 |
+|4       |250000|2000       |2871369 |
+
+<img src="https://i.imgur.com/JEVqGlM.png" width="100">
+
+
+-> Variando-se o número de Threads:
+
+|nthreads|size  |repetitions|usec    |
+|--------|------|-----------|--------|
+|1       |1000000|2000       |7043961 |
+|2       |500000|2000       |3195422 |
+|4       |250000|2000       |1398253 |
+
+<img src="https://i.imgur.com/koRodXH.png" width="100">
+
+
+## Referências
+
+- [Executando OpenMP](http://www.inf.ufsc.br/~bosco.sobral/ensino/ine5645/Conceitos_OpenMP.pdf)
+- [Guide into OpenMP: Easy multithreading programming for C++](https://bisqwit.iki.fi/story/howto/openmp/)
+- [POSIX Threads Programming](https://computing.llnl.gov/tutorials/pthreads/)
+
+
