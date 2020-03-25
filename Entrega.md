@@ -14,7 +14,7 @@ TODO
 
 Considerando que o tempo de execução no primeiro caso (com apenas 1 thread) foi de 7212172 microssegundos, e no segundo caso (com 2 threads) foi de 3864718 microssegundos, a aceleração obtida foi de 1.86615737552x.
 
-<img src="https://i.imgur.com/kTF3qIL.png" width="250">
+<img src="https://i.imgur.com/kTF3qIL.png" width="500">
 
 
 
@@ -40,7 +40,7 @@ Abaixo, estão as tabelas com os dados obtidos durante a execução dos casos re
 |4                |250000          |4000                |5751932    |
 |4                |250000          |2000                |2881530    |
 
-<img src="https://i.imgur.com/z3CqDa7.png" width="250">
+<img src="https://i.imgur.com/z3CqDa7.png" width="500">
 
 
 -> Variando-se o tamanho do vetor:
@@ -51,7 +51,7 @@ Abaixo, estão as tabelas com os dados obtidos durante a execução dos casos re
 |4                |500000          |2000                |5742612                     |
 |4                |250000          |2000                |2892375                     |
 
-<img src="https://i.imgur.com/3zHJyXz.png" width="250">
+<img src="https://i.imgur.com/3zHJyXz.png" width="500">
 
 
 -> Variando-se o número de threads:
@@ -62,7 +62,7 @@ Abaixo, estão as tabelas com os dados obtidos durante a execução dos casos re
 |2                |500000          |2000                |3595174    |
 |4                |250000          |2000                |1438810    |
 
-<img src="https://i.imgur.com/eR9sv2n.png" width="250">
+<img src="https://i.imgur.com/eR9sv2n.png" width="500">
 
 
 **Resposta questão 5:**
@@ -88,7 +88,7 @@ O desempenho do programa OpenMP implementado foi analisado utilizando-se os mesm
 |4       |250000|4000       |5739137 |
 |4       |250000|2000       |2865963 |
 
-<img src="https://i.imgur.com/wwREOOf.png" width="250">
+<img src="https://i.imgur.com/wwREOOf.png" width="500">
 
 
 -> Variando-se o tamanho do vetor:
@@ -99,7 +99,7 @@ O desempenho do programa OpenMP implementado foi analisado utilizando-se os mesm
 |4       |500000|2000       |5720374 |
 |4       |250000|2000       |2871369 |
 
-<img src="https://i.imgur.com/JEVqGlM.png" width="250">
+<img src="https://i.imgur.com/JEVqGlM.png" width="500">
 
 
 -> Variando-se o número de Threads:
@@ -110,7 +110,7 @@ O desempenho do programa OpenMP implementado foi analisado utilizando-se os mesm
 |2       |500000|2000       |3195422 |
 |4       |250000|2000       |1398253 |
 
-<img src="https://i.imgur.com/koRodXH.png" width="250">
+<img src="https://i.imgur.com/koRodXH.png" width="500">
 
 
 ## Referências
